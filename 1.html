@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Artistry Battle 2024</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-header">
+        <h1>AI Artistry Battle 2024</h1>
+        <p style="margin-bottom: 20px; font-size: 12px; color: #606060">
+          A Clash of Creative Algorithms
+        </p>
+      </div>
+      <form id="artistry-form">
+        <div class="form-group upload-prompt-container">
+          <div class="upload-box">
+            <label for="image-upload">1</label>
+            <input
+              type="file"
+              id="image-upload"
+              accept="image/*"
+              required="required"
+            />
+            <img src="1.png" alt="" style="height: 200px" />
+          </div>
+          <div class="prompt-box">
+            <label for="prompt">2</label>
+            <textarea id="prompt" placeholder="Add Prompt" required></textarea>
+          </div>
+        </div>
+        <div class="heading">
+          <div style="font-size: 14px; font-weight: bold">
+            Age <span style="color: red">*</span>
+          </div>
+          <div style="font-size: 14px; font-weight: bold">
+            Tool Used<span style="color: red">*</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="number" id="age" placeholder="14+ required" required />
+          <input
+            type="text"
+            id="tool-used"
+            placeholder="Ex. Ideogram, Runway, Etc."
+            required
+          />
+        </div>
+        <div class="heading_1">
+          <div style="font-size: 14px; font-weight: bold">
+            City<span style="color: red">*</span>
+          </div>
+          <div style="font-size: 14px; font-weight: bold">
+            State<span style="color: red">*</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="city" placeholder="City*" required />
+          <input
+            type="text"
+            id="state"
+            placeholder="State*"
+            value="Maharashtra"
+            required
+          />
+        </div>
+        <div class="d-grid gap-2">
+          <button
+            class="btn btn-primary"
+            type="submit"
+            style="border-radius: 30px"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Popup -->
+    <div id="popupBox" class="popup-box">
+      <div class="popup-content">
+        <div class="container">
+          <button
+            type="button"
+            id="closePopupBtn"
+            class="btn-close"
+            aria-label="Close"
+            style="background-color: aliceblue"
+          ></button>
+        </div>
+        <img src="trophy.png" alt="Trophy" />
+        <p class="congr">Congratulations!</p>
+        <p class="share-text-1">Your image is live now</p>
+        <p class="share-text">Share your image to boost your chances</p>
+        <div class="share-links">
+          <a href="https://whatsapp.com" target="_blank" class="whatsapp">
+            <img src="whatsapp-icon.png" alt="WhatsApp" />
+          </a>
+          <a href="https://instagram.com" target="_blank" class="instagram">
+            <img src="instagram-icon.png" alt="Instagram" />
+          </a>
+          <a href="https://facebook.com" target="_blank" class="facebook">
+            <img src="facebook-icon.png" alt="Facebook" />
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="linkedin">
+            <img src="linkedin-icon.png" alt="LinkedIn" />
+          </a>
+          <a href="gallery.html" target="_blank" class="link">
+            <img src="link-icon.png" alt="Link" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Page -->
+    <div id="galleryPage" class="gallery-container" style="display: none">
+      <h1>AI Artistry Showdown - Participants Gallery</h1>
+      <div class="gallery" id="gallery">
+        <!-- Gallery images will be inserted here -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
